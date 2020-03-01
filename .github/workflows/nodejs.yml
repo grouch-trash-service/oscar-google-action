@@ -18,9 +18,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install dialogflow-cli -g
-    - run: echo $credentials_json
-      
+    - run: echo $credentials_json  > ./credentials.json
+      env:
+        credentials_json: ${{ secrets.CREDENTIALS_JSON }}
     - run: dialogflow-cli import --credentials ./credentials.json .
       env:
         CI: true
-        credentials_json: ${{ secrets.CREDENTIALS_JSON }}
