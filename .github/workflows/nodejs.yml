@@ -4,19 +4,14 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [8.x]
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Deploy Dialogflow
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 8.x
     - run: npm install dialogflow-cli -g
     - run: echo $credentials_json  > ./credentials.json
       env:
@@ -24,6 +19,7 @@ jobs:
     - run: dialogflow-cli import --credentials ./credentials.json .
       env:
         CI: true
+    
     - name: Deploy Firebase
       uses: actions/setup-node@v1
       with:
