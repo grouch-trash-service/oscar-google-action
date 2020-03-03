@@ -31,10 +31,12 @@
   },
   "defaultTimezone": "America/New_York",
   "webhook": {
-    "url": "",
+    "url": "https://us-central1-oscar-e0508.cloudfunctions.net/dialogflowFirebaseFulfillment",
     "username": "",
-    "headers": {},
-    "available": false,
+    "headers": {
+      "": ""
+    },
+    "available": true,
     "useForDomains": false,
     "cloudFunctionsEnabled": false,
     "cloudFunctionsInitialized": false
