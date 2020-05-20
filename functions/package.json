@@ -1,7 +1,8 @@
 {
-  "name": "codelab-level-one",
-  "description": "Actions on Google Codelab Level 1",
-  "author": "Google Inc",
+  "name": "oscar-google-action-functions",
+  "description": "Google action for 'Grouch Trash Service' that will tell the user what day trash pick up is",
+  "author": "Matt Porter",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "8"

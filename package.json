@@ -1,3 +1,13 @@
 {
-  "version": "1.0.0"
+  "name": "oscar-google-action",
+  "description": "Google action for 'Grouch Trash Service' that will tell the user what day trash pick up is",
+  "author": "Matt Porter",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+      "install" : "npm --prefix functions install functions"
+  }
 }

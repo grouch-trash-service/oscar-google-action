@@ -19,13 +19,13 @@ jobs:
     - run: dialogflow-cli import --credentials ./credentials.json .
       env:
         CI: true
-    
+
     - name: Deploy Firebase
       uses: actions/setup-node@v1
       with:
         node-version: 13.x
     - run: npm install firebase-tools -g
-    - run: npm --prefix functions install functions
+    - run: npm install
     - run: firebase deploy --token "$firebase_token"
       env:
         firebase_token: ${{ secrets.FIREBASE_TOKEN }}
