@@ -32,6 +32,6 @@ jobs:
       env:
         firebase_token: ${{ secrets.FIREBASE_TOKEN }}
         CI: true
-    - run: firebase emulators:exec "npm run cucumber"
+    - run: npm run cucumber
       env:
         NODE_ENV: production
