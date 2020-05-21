@@ -9,6 +9,6 @@
   },
   "scripts": {
     "install": "npm --prefix functions install functions",
-    "test": "jest --projects functions"
+    "test": "npm --prefix functions test"
   }
 }
