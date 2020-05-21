@@ -10,4 +10,4 @@ app.intent('Default Welcome Intent', (conv) => {
  });
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
-module.exports = app;
+exports.app = app;

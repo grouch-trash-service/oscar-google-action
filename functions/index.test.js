@@ -1,4 +1,4 @@
-const app = require('./index');
+const app = require('./index').app;
 const sinon = require('sinon');
 
 describe('Describe Google Action', ()=>{
