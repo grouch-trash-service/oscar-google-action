@@ -13,7 +13,8 @@
     "shell": "firebase experimental:functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "test": "jest"
   },
   "dependencies": {
     "actions-on-google": "^2.0.0",
@@ -22,6 +23,8 @@
   },
   "devDependencies": {
     "eslint": "^4.19.0",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "jest": "^26.0.1",
+    "sinon": "^9.0.2"
   }
 }
