@@ -25,6 +25,10 @@
     "eslint": "^4.19.0",
     "eslint-config-google": "^0.9.1",
     "jest": "^26.0.1",
-    "sinon": "^9.0.2"
+    "chai": "^4.2.0",
+    "sinon": "^9.0.2",
+    "cucumber": "^6.0.5",
+    "request": "^2.88.2",
+    "config": "^3.3.1"
   }
 }

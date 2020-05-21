@@ -27,7 +27,11 @@ jobs:
     - run: npm install firebase-tools -g
     - run: npm install
     - run: npm test
+    - run: firebase emulators:exec "npm run cucumber"
     - run: firebase deploy --token "$firebase_token"
       env:
         firebase_token: ${{ secrets.FIREBASE_TOKEN }}
         CI: true
+    - run: firebase emulators:exec "npm run cucumber"
+      env:
+        NODE_ENV: production

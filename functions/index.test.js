@@ -2,7 +2,7 @@ const app = require('./index').app;
 const sinon = require('sinon');
 
 describe('Describe Google Action', ()=>{
-   describe('Default Welcome Intent', () => {
+   describe('I ask when trash pickup is', () => {
        it('should return trash pickup information', () => {
            const conv = {
                close: function() {
