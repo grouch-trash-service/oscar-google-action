@@ -5,14 +5,11 @@ describe('Describe Google Action', ()=>{
    describe('I ask when trash pickup is', () => {
        it('should return trash pickup information', () => {
            const conv = {
-               close: function() {
-
-               },
+               close: sinon.stub(),
            };
-           const closeStub = sinon.stub(conv, 'close');
            app._handlers.intents['Default Welcome Intent'].call('', conv);
-           sinon.assert.calledOnce(closeStub);
-           sinon.assert.calledWith(closeStub,
+           sinon.assert.calledOnce(conv.close);
+           sinon.assert.calledWith(conv.close,
                'Hello. Trash pickup will be on Tuesday... Now SCRAM!');
        });
    });
