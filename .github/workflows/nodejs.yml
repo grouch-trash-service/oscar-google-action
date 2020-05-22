@@ -8,11 +8,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Deploy Dialogflow
+    - name: Setup NodeJs 8
       uses: actions/setup-node@v1
       with:
         node-version: 8.x
-    - run: npm install dialogflow-cli -g
+    - name: Install dialogflow-cli
+      run: npm install dialogflow-cli -g
     - run: echo $credentials_json  > ./credentials.json
       env:
         credentials_json: ${{ secrets.CREDENTIALS_JSON }}
@@ -20,18 +21,24 @@ jobs:
       env:
         CI: true
 
-    - name: Deploy Firebase
+    - name: Setup NodeJs 13
       uses: actions/setup-node@v1
       with:
         node-version: 13.x
-    - run: npm install firebase-tools -g
-    - run: npm install
-    - run: npm test
-    - run: firebase emulators:exec "npm run cucumber"
-    - run: firebase deploy --token "$firebase_token"
+    - name: Install firebase-tools
+      run: npm install firebase-tools -g
+    - name: Install
+      run: npm install
+    - name: Test
+      run: npm test
+    - name: Run local cucumber tests
+      run: firebase emulators:exec "npm run cucumber"
+    - name: Deploy Firebase
+      run: firebase deploy --token "$firebase_token"
       env:
         firebase_token: ${{ secrets.FIREBASE_TOKEN }}
         CI: true
-    - run: npm run cucumber
+    - name: Run Cucumber Tests
+      run: npm run cucumber
       env:
         NODE_ENV: production
