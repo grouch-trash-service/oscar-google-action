@@ -33,6 +33,11 @@ jobs:
       run: npm test
     - name: Run local cucumber tests
       run: firebase emulators:exec "npm run cucumber"
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: Run Snyk to check for vulnerabilities
       uses: snyk/actions/node@master
       env:
