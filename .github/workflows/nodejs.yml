@@ -33,6 +33,12 @@ jobs:
       run: npm test
     - name: Run local cucumber tests
       run: firebase emulators:exec "npm run cucumber"
+    - name: Run Snyk to check for vulnerabilities
+      uses: snyk/actions/node@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: --file=functions/pacakge-lock.json
     - name: Deploy Firebase
       run: firebase deploy --token "$firebase_token"
       env:
