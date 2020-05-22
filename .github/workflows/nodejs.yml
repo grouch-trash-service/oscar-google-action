@@ -38,7 +38,7 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        args: --file=functions/package-lock.json
+        args: --file=functions/package-lock.json --severity-threshold=high
     - name: Deploy Firebase
       run: firebase deploy --token "$firebase_token"
       env:
