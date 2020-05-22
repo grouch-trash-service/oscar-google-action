@@ -31,7 +31,7 @@
   },
   "defaultTimezone": "America/New_York",
   "webhook": {
-    "url": "https://us-central1-oscar-e0508.cloudfunctions.net/dialogflowFirebaseFulfillment",
+    "url": "https://us-central1-oscar-7309e.cloudfunctions.net/dialogflowFirebaseFulfillment",
     "username": "",
     "headers": {
       "": ""

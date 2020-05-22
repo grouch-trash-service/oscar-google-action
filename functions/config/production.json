@@ -1,5 +1,5 @@
 {
   "dialogflow" : {
-    "url": "https://us-central1-oscar-e0508.cloudfunctions.net/dialogflowFirebaseFulfillment"
+    "url": "https://us-central1-oscar-7309e.cloudfunctions.net/dialogflowFirebaseFulfillment"
   }
 }
