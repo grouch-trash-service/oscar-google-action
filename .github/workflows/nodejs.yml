@@ -25,6 +25,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 13.x
+        registry-url: 'https://npm.pkg.github.com'
+        scope: '@grouch-trash-service'
     - name: Install firebase-tools
       run: npm install firebase-tools -g
     - name: Install
