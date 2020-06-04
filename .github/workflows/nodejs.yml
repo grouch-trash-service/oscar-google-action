@@ -55,7 +55,7 @@ jobs:
       with:
         args: --file=functions/package-lock.json --severity-threshold=high
     - name: Replace .npmrc with token
-      run: sed "s/\${NODE_AUTH_TOKEN}/${NODE_AUTH_TOKEN}/g" functions/.npmrc > functions/.npmrc
+      run: sed -i.bak "s/\${NODE_AUTH_TOKEN}/${NODE_AUTH_TOKEN}/g" functions/.npmrc
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Deploy Firebase
