@@ -5,7 +5,7 @@ const functions = require('firebase-functions');
 
 const app = dialogflow({debug: true});
 
-app.intent('Default Welcome Intent', (conv) => {
+app.intent('Default Welcome Intent', async (conv) => {
     conv.close('Hello. Trash pickup will be on Tuesday... Now SCRAM!');
 });
 
