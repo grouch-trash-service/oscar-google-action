@@ -9,7 +9,6 @@ class GrouchMessageService {
      */
     constructor(messageApiClient) {
         this.messageApiClient = messageApiClient;
-        this.message = '';
     }
 
     /**
