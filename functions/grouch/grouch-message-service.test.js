@@ -22,4 +22,18 @@ describe('Grouch Message Service', ()=> {
           expect(message).toEqual(expectedMessage);
       });
   });
+    describe('Fallback', () => {
+        it('Should return a valid message', async () => {
+            const client = new MessageApi();
+            const expectedText =
+                'I don\'t feel like talking right now... Now SCRAM!';
+            const expectedMessage = new Message();
+            expectedMessage.text = expectedText;
+            const grouchMessageService = new GrouchMessageService(client);
+
+            const message = await grouchMessageService.fallback();
+
+            expect(message).toEqual(expectedMessage);
+        });
+    });
 });

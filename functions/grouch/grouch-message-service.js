@@ -22,6 +22,7 @@ class GrouchMessageService {
      */
     async getMessage() {
         const breaker = new CircuitBreaker(this._fetchMessage, this.options);
+        breaker.fallback(this.fallback);
         return await breaker.fire(this.messageApiClient);
     }
 
@@ -34,6 +35,14 @@ class GrouchMessageService {
     async _fetchMessage(messageApiClient) {
         let message = await messageApiClient.getMessage();
         return message.body;
+    }
+
+    /**
+     * Returns a default message.
+     * @return {Promise<Message>}
+     */
+    async fallback() {
+        return {text: 'I don\'t feel like talking right now... Now SCRAM!'};
     }
 }
 exports.GrouchMessageService = GrouchMessageService;
