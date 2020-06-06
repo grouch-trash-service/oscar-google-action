@@ -4,13 +4,12 @@ const {dialogflow} = require('actions-on-google');
 const functions = require('firebase-functions');
 
 const app = dialogflow({debug: true});
-const config = require('config');
 const factory = require('./grouch/api-client-factory');
 const {GrouchMessageService} = require('./grouch/grouch-message-service');
 
+// TODO: update to pull from firebase config
 const apiClient = factory
-    .build(config.get('grouch-message-service.url'),
-        config.get('grouch-message-service.token'));
+    .build('https://q6n0afvfcf.execute-api.us-east-1.amazonaws.com/Prod', 'password');
 const grouchMessageService = new GrouchMessageService(apiClient);
 
 app.intent('Default Welcome Intent', async (conv) => {

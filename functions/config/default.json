@@ -1,9 +1,5 @@
 {
   "dialogflow" : {
     "url": "http://localhost:5001/oscar-7309e/us-central1/dialogflowFirebaseFulfillment"
-  },
-  "grouch-message-service": {
-    "url" : "https://q6n0afvfcf.execute-api.us-east-1.amazonaws.com/Prod",
-    "token": "password"
   }
 }
