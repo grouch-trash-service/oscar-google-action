@@ -22,7 +22,7 @@ The tests can be ran locally using the firebase emulator.
 The tests can be ran by using this command.
 
 ```bash
-firebase emulators:exec "npm run cucumber"
+./node_modules/firebase-tools/lib/bin/firebase.js emulators:exec "npm run cucumber"
 ```
 
 To run the tests against the server using this command.

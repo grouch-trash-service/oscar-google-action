@@ -11,5 +11,8 @@
     "install": "npm --prefix functions install functions",
     "test": "npm --prefix functions test",
     "cucumber": "cd functions && node_modules/.bin/cucumber-js"
+  },
+  "devDependencies": {
+    "firebase-tools": "^8.4.2"
   }
 }
