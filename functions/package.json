@@ -20,7 +20,8 @@
     "actions-on-google": "^2.12.0",
     "firebase-admin": "^8.12.1",
     "firebase-functions": "^3.6.2",
-    "@grouch-trash-service/grouch-api-gateway": "^1.0.34"
+    "@grouch-trash-service/grouch-api-gateway": "^1.0.34",
+    "opossum": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.0",

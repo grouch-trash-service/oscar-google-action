@@ -1,3 +1,4 @@
+const CircuitBreaker = require('opossum');
 /**
  * A Service that retrieves Grouchy Messages
  */
@@ -16,7 +17,11 @@ class GrouchMessageService {
      * @return {Promise<Message>}
      */
     async getMessage() {
-        let message = await this.messageApiClient.getMessage();
+        const breaker = new CircuitBreaker(this._fetchMessage, {});
+        return await breaker.fire(this.messageApiClient);
+    }
+    async _fetchMessage(messageApiClient) {
+        let message = await messageApiClient.getMessage();
         return message.body;
     }
 }
