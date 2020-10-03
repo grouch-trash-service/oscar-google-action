@@ -9,7 +9,7 @@ const {GrouchMessageService} = require('./grouch/grouch-message-service');
 
 // TODO: update to pull from firebase config
 const apiClient = factory
-    .build('https://q6n0afvfcf.execute-api.us-east-1.amazonaws.com/Prod', 'password');
+    .build('https://d9lz2a1tq2.execute-api.us-east-1.amazonaws.com/Prod', 'password');
 const grouchMessageService = new GrouchMessageService(apiClient);
 
 app.intent('Default Welcome Intent', async (conv) => {
