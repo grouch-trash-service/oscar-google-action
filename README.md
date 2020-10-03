@@ -4,10 +4,6 @@ The day for trash changes on certain holidays, This google actions aims to help 
 information by making it easily accessible.
 
 ## Build
-Before running the build make sure you have the necessary tools installed by running
-```bash
-./init
-```
 Builds use npm and can be ran using this command.
 ```bash
 npm install
