@@ -1,0 +1,291 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-NODEFETCH-674311:
+    - actions-on-google > googleapis > googleapis-common > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.794Z'
+    - actions-on-google > googleapis > google-auth-library > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > googleapis-common > google-auth-library > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > google-auth-library > gtoken > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > google-auth-library > gcp-metadata > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > google-auth-library > gtoken > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > googleapis-common > google-auth-library > gcp-metadata > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > googleapis-common > google-auth-library > gtoken > gaxios > node-fetch:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - '@google-cloud/storage > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+    - '@google-cloud/storage > gcs-resumable-upload > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+    - '@google-cloud/common > google-auth-library > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+    - '@google-cloud/common > google-auth-library > gcp-metadata > gaxios > node-fetch':
+        reason: No patch
+        expires: '2020-11-02T18:09:31.506Z'
+    - '@google-cloud/storage > gcs-resumable-upload > google-auth-library > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+    - '@google-cloud/common > google-auth-library > gtoken > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/storage > @google-cloud/common > google-auth-library > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/storage > gcs-resumable-upload > google-auth-library > gtoken > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/storage > @google-cloud/common > google-auth-library > gcp-metadata > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/firestore > google-gax > @grpc/grpc-js > google-auth-library > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/storage > gcs-resumable-upload > google-auth-library > gcp-metadata > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/storage > @google-cloud/common > google-auth-library > gtoken > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/firestore > google-gax > @grpc/grpc-js > google-auth-library > gcp-metadata > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+    - '@google-cloud/firestore > google-gax > @grpc/grpc-js > google-auth-library > gtoken > gaxios > node-fetch':
+        reason: None given
+        expires: '2020-11-02T18:12:36.521Z'
+  SNYK-JS-AJV-584908:
+    - '@grouch-trash-service/grouch-api-gateway > request > har-validator > ajv':
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+  SNYK-JS-JSONBIGINT-608659:
+    - actions-on-google > googleapis > google-auth-library > gcp-metadata > json-bigint:
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+    - actions-on-google > googleapis > googleapis-common > google-auth-library > gcp-metadata > json-bigint:
+        reason: None given
+        expires: '2020-11-02T18:09:31.506Z'
+  SNYK-JS-NODEFORGE-598677:
+    - actions-on-google > google-auth-library > gtoken > google-p12-pem > node-forge:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > google-auth-library > gtoken > google-p12-pem > node-forge:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+    - actions-on-google > googleapis > googleapis-common > google-auth-library > gtoken > google-p12-pem > node-forge:
+        reason: None given
+        expires: '2020-11-02T17:32:17.795Z'
+  SNYK-JS-LODASH-590103:
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.610Z'
+      firebase-functions > lodash:
+        reason: None given
+        expires: '2020-11-02T19:00:09.855Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-register > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-generator > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-generator > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.613Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.613Z'
+  SNYK-JS-LODASH-608086:
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+      firebase-functions > lodash:
+        reason: None given
+        expires: '2020-11-02T19:00:09.855Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-register > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-generator > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-generator > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.611Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.612Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.613Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-traverse > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.613Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash':
+        reason: None given
+        expires: '2020-11-02T18:57:53.613Z'
+  SNYK-JS-LODASH-567746:
+    - firebase-functions > lodash:
+        reason: None given
+        expires: '2020-11-02T19:00:09.854Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-traverse > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-traverse > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-traverse > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-generator > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-traverse > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-traverse > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > babel-traverse > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-generator > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-template > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-traverse > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-register > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-core > lodash':
+        patched: '2020-10-03T18:55:48.092Z'
+    - '@grouch-trash-service/grouch-api-gateway > rewire > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > babel-types > lodash':
+        patched: '2020-10-03T18:55:48.092Z'

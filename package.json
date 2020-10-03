@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "8"
+    "node": "10"
   },
   "scripts": {
     "install": "npm --prefix functions install functions",
@@ -13,6 +13,9 @@
     "cucumber": "cd functions && node_modules/.bin/cucumber-js"
   },
   "devDependencies": {
-    "firebase-tools": "^8.4.2"
+    "firebase-tools": "^8.11.2"
+  },
+  "dependencies": {
+    "firebase-functions": "^3.11.0"
   }
 }
