@@ -4,6 +4,7 @@
   "shortDescription": "",
   "examples": "",
   "linkToDocs": "",
+  "displayName": "oscar",
   "disableInteractionLogs": false,
   "disableStackdriverLogs": true,
   "googleAssistant": {
@@ -39,13 +40,14 @@
     "available": true,
     "useForDomains": false,
     "cloudFunctionsEnabled": false,
-    "cloudFunctionsInitialized": false
+    "cloudFunctionsInitialized": true
   },
   "isPrivate": true,
-  "customClassifierMode": "use.after",
   "mlMinConfidence": 0.3,
   "supportedLanguages": [],
+  "enableOnePlatformApi": true,
   "onePlatformApiVersion": "v2",
+  "secondaryKey": "ebf12f0fdcc2415b84fc65d47333d63b",
   "analyzeQueryTextSentiment": false,
   "enabledKnowledgeBaseNames": [],
   "knowledgeServiceConfidenceAdjustment": -0.4,
