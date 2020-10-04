@@ -11,7 +11,7 @@ class GrouchMessageService {
     constructor(messageApiClient) {
         this.messageApiClient = messageApiClient;
         this.options = {
-            timeout: 5000,
+            timeout: 30000,
             errorThresholdPercentage: 80,
             resetTimeout: 3000,
         };
