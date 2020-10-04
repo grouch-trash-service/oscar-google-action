@@ -3,3 +3,4 @@ credentials.json
 .idea/
 *.log
 node_modules/
+.runtimeconfig.json

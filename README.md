@@ -22,6 +22,7 @@ The tests can be ran locally using the firebase emulator.
 The tests can be ran by using this command.
 
 ```bash
+./node_modules/firebase-tools/lib/bin/firebase.js functions:config:get > .runtimeconfig.json
 ./node_modules/firebase-tools/lib/bin/firebase.js emulators:exec "npm run cucumber"
 ```
 
@@ -42,6 +43,12 @@ Deployments use the `dialogflow-cli` to deploy to dialog flow. You can deploy fr
 dialogflow-cli import --credentials ./credentials.json .
 ```
 Credentials will need to be exported out of the dialogflow console and saved as `./credential.json`
+
+### Firebase config Deploy
+Deploy the configuration for the firebase function using this command
+```shell script
+firebase functions:config:set api.url="$api_url" api.key="$api_key"
+```
 
 ### Firebase functions Deploy
 Deployments use the `firebase-tools` library to deploy the intent functions. You can deploy from your local using this command.
