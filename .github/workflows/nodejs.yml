@@ -64,9 +64,10 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: update Firebase env
-      run: firebase functions:config:set api.url="https://d9lz2a1tq2.execute-api.us-east-1.amazonaws.com/Prod" api.key="$api_key"
+      run: firebase functions:config:set api.url="https://d9lz2a1tq2.execute-api.us-east-1.amazonaws.com/Prod" api.key="$api_key" --token "$firebase_token"
       env:
         api_key: ${{ secrets.AWS_API_KEY }}
+        firebase_token: ${{ secrets.FIREBASE_TOKEN }}
 
     - name: Deploy Firebase
       run: firebase deploy --token "$firebase_token"
