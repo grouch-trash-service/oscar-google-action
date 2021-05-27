@@ -1,0 +1,48 @@
+name: Dialogflow CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup NodeJs 13
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.x
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@grouch-trash-service'
+
+      - name: Install firebase-tools
+        run: npm install firebase-tools -g
+      - name: Install
+        run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Test
+        run: npm test
+      - name: Run local cucumber tests
+        run: |
+          echo $runtime_config > .runtimeconfig.json
+          firebase emulators:exec "npm run cucumber"
+        env:
+          runtime_config: ${{ secrets.RUNTIME_CONFIG }}
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Check Sonar Status
+        run: |
+          status=$(curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=matthew-js-porter_oscar-google-action)
+          echo $status | jq '.'
+          status=$(echo $status | jq '.projectStatus.status')
+          test '"OK"' = $status
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --file=functions/package-lock.json --severity-threshold=high --policy-path=.snyk
