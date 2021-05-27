@@ -1,4 +1,4 @@
-name: Dialogflow CI
+name: Validate Pull Request
 
 on: [push]
 
