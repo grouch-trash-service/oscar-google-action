@@ -33,6 +33,8 @@ When('asking Grouch Trash Service', {timeout: 12000}, (done)=> {
 // eslint-disable-next-line new-cap
 Then('I am told when trash pickup is this week', () => {
     expect(response.payload.google.richResponse
-        .items[0].simpleResponse.textToSpeech).to.have.string('Trash');
+        .items[0].simpleResponse.textToSpeech).to.satisfy((text)=> {
+        return text.includes('Trash') || text.includes('lousy');
+    });
 });
 

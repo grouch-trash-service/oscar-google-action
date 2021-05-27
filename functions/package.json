@@ -17,23 +17,22 @@
     "test": "jest --collect-coverage"
   },
   "dependencies": {
-    "node-forge": ">=0.10.0",
-    "lodash": ">=4.17.19",
-    "actions-on-google": "^2.13.0",
-    "firebase-admin": "^9.2.0",
-    "firebase-functions": "^3.11.0",
     "@grouch-trash-service/grouch-api-gateway": "^1.0.34",
+    "actions-on-google": "^2.13.0",
+    "firebase-admin": "^9.9.0",
+    "firebase-functions": "^3.14.1",
+    "node-forge": ">=0.10.0",
     "opossum": "^5.0.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "config": "^3.3.1",
+    "cucumber": "^6.0.5",
     "eslint": "^4.19.0",
     "eslint-config-google": "^0.9.1",
+    "firebase-functions-test": "^0.2.2",
     "jest": "^26.0.1",
-    "chai": "^4.2.0",
-    "sinon": "^9.0.2",
-    "cucumber": "^6.0.5",
     "request": "^2.88.2",
-    "config": "^3.3.1",
-    "firebase-functions-test": "^0.2.2"
+    "sinon": "^9.0.2"
   }
 }
