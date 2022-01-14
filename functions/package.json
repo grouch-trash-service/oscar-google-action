@@ -21,7 +21,7 @@
     "actions-on-google": "^2.13.0",
     "firebase-admin": "^9.9.0",
     "firebase-functions": "^3.14.1",
-    "node-forge": ">=0.10.0",
+    "node-forge": ">=1.0.0",
     "opossum": "^5.0.0"
   },
   "devDependencies": {
