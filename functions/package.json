@@ -19,7 +19,7 @@
   "dependencies": {
     "@grouch-trash-service/grouch-api-gateway": "^1.0.34",
     "actions-on-google": "^2.13.0",
-    "firebase-admin": "^9.9.0",
+    "firebase-admin": "^11.4.1",
     "firebase-functions": "^3.14.1",
     "node-forge": ">=0.10.0",
     "opossum": "^5.0.0"
